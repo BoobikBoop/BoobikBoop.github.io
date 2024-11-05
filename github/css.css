@@ -1,0 +1,592 @@
+/* Подключаю шрифты
+font-weight: Размеры шрифтов по насыщенности: 
+100 - thin
+200 - ultralight
+300 light
+400 regular
+500 medium
+600 semibold
+700 bold
+800 heavy
+900 black*/
+@font-face {
+  font-family: "Roboto-100";
+  src: url("fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-300";
+  src: url("fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-400";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-500";
+  src: url("fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto-700";
+  src: url("fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-900";
+  src: url("fonts/Roboto-Black.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Roboto;
+    color: #323334;
+  }
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Header Тут   ---------------------------*/
+header, article, .catalog{
+  width: 100%;
+}
+
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+
+header{
+  height: 89px;
+  width: 1275px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 72px;
+  height: 33px;
+  text-align: center;
+  font-family: "Roboto-700";
+  font-size: 28px;
+  line-height: 32.81px;
+  font-weight: 700;
+}
+
+header>nav>ul{
+  display: flex;
+  flex-direction: row;
+  width: 373px;
+  height: 19px;
+  line-height: 18.75px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+header>nav>ul>li>a{
+  font-family: "Roboto-700";
+  font-weight: 700;
+  size: 16px;
+  text-decoration: none;
+}
+header>nav>ul>li>a:hover{
+  color: grey;
+}
+
+.using{
+  display: flex;
+  flex-direction: row;
+  width: 84px;
+  justify-content: space-between;
+  align-items: center;
+}
+.using_search{
+  background-image: url("img/Search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 27px;
+}
+.using_user{
+  background-image: url("img/User.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 29px;
+  width: 27px;
+}
+/* article тут ---------------------------*/
+article{
+  height: 265px;
+  background-color: #DCE1DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article>div{
+  width: 649px;
+  height: 90px;
+  text-align: center; 
+}
+article>div>p{
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 44.53px;
+  font-family: "Roboto-400";
+}
+/* catalog тут ---------------------------*/
+
+.catalog{
+  display: flex;
+  flex-direction: row;
+}
+
+aside{
+  width: 385px;
+}
+.elements_of_aside{
+  width: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 82px;
+  margin-top: 60px;
+}
+.element{
+  margin: 0px 0px 32px 0px;
+
+}
+.element>p{
+  font-family: "Roboto-700";
+  font-weight: 700;
+  line-height: 23.44px;
+  font-size: 20px;
+}
+
+/* Main тут ------------------------------*/
+main{
+  display: flex;
+  flex-direction: column;
+  margin-left: 125px;
+}
+.title{
+  width: 209px;
+  font-family: "Roboto-700";
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51.56px;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+.under_title{
+  font-family: "Roboto-300";
+  font-weight: 300;
+  size: 18px;
+  line-height: 21.09px;
+  margin-bottom: 25px;
+}
+.goods{
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.good{
+  height: 481px;
+  width: 262px;
+  border-radius: 5px;
+  border: 1px solid #0E6CDD4D;
+  padding: 32px 29px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+  margin-right: 86px;
+}
+.image{
+  width: 200px;
+  height: 188px;
+  background-image: url("img/Iphone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rating{
+  display: flex;
+  width: 41px;
+  height: 24px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.star{
+  width: 13px;
+  height: 12px;
+  margin-top: -2px;
+  background-image: url("img/star.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.rating>p{
+  font-family: "Roboto-400";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  margin-left: 21px;
+}
+.green_mark, .red_mark{
+  color: white;
+  position: absolute;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Roboto-400";
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.green_mark{
+  width: 115px;
+  height: 24px;
+  background-color: #34A853;
+  margin-top: -16px;
+}
+.red_mark{
+  width: 95px;
+  height: 24px;
+  background-color: #E31E24;
+  margin-top: 12px;
+}
+.describe{
+  width: 200px;
+  padding: 8px auto;
+}
+.describe>p{
+  font-family: "Roboto-400";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.in_stock{
+  margin-top: 8px;
+  width: 164px;
+}
+.in_stock>p{
+  font-family: "Roboto-400";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.in_stock>p>a{
+  font-family: "Roboto-400";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  outline: none;
+  text-decoration: none;
+  color: #005CCC;
+}
+.in_stock>p>a:hover{
+  color: #FFD740;
+}
+
+.price{
+  width: 175px;
+  height: 32px;
+  margin: 8px auto;
+}
+.oldprice{
+  position: absolute;
+}
+
+.oldprice>p{
+  font-family: "Roboto-400";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #7D7D7D;
+  text-decoration: line-through;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+.newprice{
+  position: absolute;
+}
+.newprice>p{
+  color: black;
+  font-weight: 400;
+  font-family: "Roboto-400";
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 54px;
+}
+
+.functions{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.basket{
+  width: 127px;
+  height: 44px;
+  background-color: #FFD740;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 17px;
+}
+.basket:hover{
+  cursor:pointer;
+}
+.basket:active{
+  width: 126px;
+  height: 43px;
+}
+.basket>p{
+  color: #333333;
+  font-family: "Roboto-400";
+  font-size: 14px;
+  line-height: 24px;
+
+}
+
+.like{
+  height: 20px;
+  width: 21px;
+  background-image: url("img/heart.svg");
+  margin-right: 17px;
+  background-repeat: no-repeat;
+}
+.add{
+  height: 20px;
+  width: 23px;
+  background-image: url("img/add.svg");
+  background-repeat: no-repeat;
+}
+
+/* Основное разрешение 1440px закончено, снизу адаптив для размера 834px(планшет) */
+@media(max-width: 834px){
+
+header{
+  width: 785px;
+  height: 91px;
+}
+header>nav{
+  padding: 7px 0px;
+}
+article{
+  height: 193px;
+}
+article>div{
+  width:375px;
+  height: 111px;
+  margin: 41px auto;
+}
+article>div>p{
+  font-size: 26px;
+  line-height: 37px;
+}
+/* Снизу Каталог */
+
+.catalog{
+  flex-direction: column;
+}
+aside{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.elements_of_aside{
+  flex-direction: row;
+  margin: 40px 0 41px 0;
+  width: 780px;
+}
+.element{
+  width: 84px;
+  margin: 0px;
+  margin-right: 32px;
+}
+
+.element>p{
+  font-size: 16px;
+  line-height: 17.75px;
+  font-family: "Roboto-700";
+  margin-bottom: 0px;
+}
+.element:last-child{
+  margin-right: 0;
+}
+
+main{
+  margin: 0 25px 0 25px;
+}
+
+.title{
+  margin: 0;
+  font-size: 34px;
+  line-height: 39.84px;
+  margin-bottom: 11px;
+}
+.under_title{
+  font-size: 16px;
+  line-height: 18.75px;
+  margin-bottom: 32px;
+}
+.goods{
+  width: 784px;
+}
+.good{
+  width: 240px;
+  height: 432px;
+  margin: 0 32px 32px 0;
+  padding: 14px 22px 0px 18px;
+}
+.good:nth-child(3n){
+  margin-right: 0;
+}
+.green_mark{
+  margin-top: 18px;
+  margin-left: 10px;
+}
+.red_mark{
+  margin-top: 46px;
+  margin-left: 10px;
+}
+.like{
+  margin-right: 10px;
+}
+}
+/* Осталось только 412px для телефона           */
+
+@media(max-width: 412px){
+
+  header{
+    width: 378px;
+    height: 69px;
+  }
+  nav, .elements_of_aside, .using_search, .using_user{
+    display: none;
+  }
+  .using{
+    height: 33px;
+    width: 24px;
+    background-image: url("img/BurgerMenu.png");
+    background-repeat: no-repeat;
+    margin-top: 15px;
+  }
+  article{
+    height: 138px;
+  }
+  article>div{
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    height: 48px;
+    width: 320px;
+  }
+  article>div>p{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .title{
+    margin-top: 29px;
+  }
+  .title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .under_title{
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  main{
+    margin: 0 17px 0 17px;
+  }
+  .good:nth-child(2n){
+    margin-right: 0;
+  }
+  .good:nth-child(3n){
+    margin-right: auto;
+  }
+  .goods{
+    width: 377px;
+  }
+  .good{
+    width: 175px;
+    height: 406px;
+    padding: 16px 18px 16px 16px;
+    margin: 0px 27px 21px 0px;
+  }
+  .image{
+    width: 141px;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .green_mark, .red_mark{
+    font-size: 10px;
+    line-height: 18px;
+    height: 18px;
+    margin-left: -2px;
+    height: 18px;
+  }
+  .green_mark{
+    width: 81px;
+    margin-top: -4px;
+  }
+  .red_mark{
+    width: 67px;
+    margin-top: 17px;
+  }
+  .describe{
+    width: 146px;
+  }
+  .in_stock{
+    width: 141px;
+  }
+  .in_stock>p{
+  font-size: 12px;    
+  }
+  .in_stock>p>a{
+  font-size: 12px;      
+  }
+  .price{
+    height: 56px;
+  }
+  .oldprice>p{
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .newprice>p{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .basket{
+    width: 112px;
+    height: 34px;
+    padding: 5px 18px;
+  }
+  .basket>p{
+    font-size: 12px;
+  }
+  .add{
+    display: none;
+  }
+  .like{
+    position: absolute;
+    margin-left: 120px;
+    margin-bottom: 5px;
+  }
+}
+@media(max-width: 1366px) and (min-width: 1360px){
+  .good:nth-child(3n){
+    margin-right: 0;
+  }
+}
+/* Закончено Ура */
