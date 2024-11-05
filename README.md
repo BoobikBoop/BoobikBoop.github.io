@@ -1,2 +1,2 @@
-# BoobikBoop.github.io
-Labwork
+# Ziyada Nurzhanova
+My web-design lab work
